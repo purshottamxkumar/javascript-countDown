@@ -98,6 +98,7 @@ input {
     }
     p {
         width: 180px;
+        font-size: 40px;
     }
     .name {
         font-size: 30px;
