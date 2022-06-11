@@ -1,0 +1,108 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-weight: bolder;
+    background-color: #cae7df;
+}
+
+a {
+    color: #292930;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: -80px;
+    padding: 25px 0 25px 0;
+
+    border: 1.5px solid black;
+}
+
+p {
+    margin: 0;
+    background-color: yellow;
+    color: red;
+    border: 1.5px solid #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    height: 75px;   
+    width: 200px;
+}
+
+p:hover {
+    border: 1.5px solid black;
+}
+
+input {
+    margin-left: 5px;
+}
+
+.header {
+    background-color: #cae;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    height: 100%;
+
+    text-align: center;
+    font-weight: bolder;
+    /* border: 1.5px dashed black; */
+}
+
+.main-content {
+    background-color: #f4abaa;
+    border: 2px solid red;
+    width: 50%;
+    margin: auto;
+
+    margin-top: 15%;
+    padding: 3%;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    background-color: #cae7df;
+    border: 1.5px solid rgb(253, 252, 252);
+    padding: 11px;
+}
+
+.btn:hover {
+    border: 1.5px solid black;
+}
+
+.name {
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+
+.name:hover {
+    text-decoration: underline;
+    font-size: 41px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        margin-bottom: -40px;
+    }
+    input {
+        margin: 0;
+        margin-top: 10px;
+    }
+    p {
+        width: 180px;
+    }
+    .name {
+        font-size: 30px;
+    }
+    .name:hover {
+        font-size: 31px;
+    }
+}
