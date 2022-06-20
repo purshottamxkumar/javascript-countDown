@@ -1,7 +1,7 @@
+
+
 let refreshInterval;
-
 function todo() {
-
     clearInterval(refreshInterval);
 
     if(document.getElementById("time").value > 1500) { 
@@ -33,7 +33,6 @@ function todo() {
 
             if(timeInSec < 0) {
                 clearInterval(refreshInterval);
-
                 secondfunc();
             }
         }
@@ -42,6 +41,6 @@ function todo() {
 
 function secondfunc() {
     if(confirm("Now your countdown has finished!")) {
-        window.location.reload();
+        window.location.reload(); // it reloads the current page!
     }
 }

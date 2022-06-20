@@ -100,7 +100,14 @@ input {
         width: 180px;
         font-size: 40px;
     }
+    .header {
+        margin-top: 85px;
+    }
     .name {
+        /* border: 2px solid red; */
+        right: 20px;
+        bottom: 510px;
+        top: 10px;
         font-size: 30px;
     }
     .name:hover {
