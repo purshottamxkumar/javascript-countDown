@@ -28,19 +28,6 @@ p {
     background-color: yellow;
     color: red;
     border-top: 1.5px solid gray;
-
-    /* margin: 0;
-    background-color: yellow;
-    color: red;
-    border: 1.5px solid #fff;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 265%;
-    height: 75px;   
-    width: auto; */
 }
 
 input {
@@ -65,7 +52,7 @@ input {
     width: 50%;
     margin: auto;
 
-    margin-top: 15%;
+    margin-top: 11%;
     padding: 3%;
 }
 
@@ -153,11 +140,14 @@ input {
         margin-top: 10px;
     }
     p {
-        width: auto;
-        font-size: 275%;
+        font-size: 100%;
     }
     .header {
         margin-top: 85px;
+    }
+    .main-content {
+        margin-top: 15%;
+        height: 330px;
     }
     .name:hover {
         font-size: 31px;
@@ -171,11 +161,44 @@ input {
     #timeInSeconds {
         margin-left: 0;
     }
+    .time-content {
+        border: 1.5px solid #fff;
+        background-color: yellow;
+        width: 30%;
+        text-align: center;
+    }
+    .Hours {
+        font-size: 175%;
+        width: auto;
+        height: 35px;
+    }
+    
+    .Minutes {
+        font-size: 175%;
+        width: auto;
+        height: 35px;
+    }
+    
+    .Seconds {
+        font-size: 175%;
+        width: auto;
+        height: 35px;
+    }
     .name {
         /* border: 2px solid red; */
         right: 20px;
         bottom: 510px;
         top: 10px;
         font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 70%;
+        padding-top: 5%;
+    }
+    .main-content {
+        padding-bottom: 4%;
     }
 }
