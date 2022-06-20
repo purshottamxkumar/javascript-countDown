@@ -16,10 +16,16 @@
     <div class="header">
         <h1>JavaScript CountDown</h1>
     </div>
-    <div class="main-content" id = "form-minutes">
+    <div class="main-content">
         <form onsubmit="todo(); return false;" id="form">
-            <label for="time">Enter time in minutes:</label>
-            <input type="text" id="time" name="time" placeholder="for eg. 15"><br><br>
+            <label for="timeInHours">Enter time in Hours:</label>
+            <input type="text" id="timeInHours" name="time" placeholder="for eg. 10"><br><br>
+
+            <label for="timeInMinutes">Enter time in Minutes:</label>
+            <input type="text" id="timeInMinutes" name="time" placeholder="for eg. 5"><br><br>
+
+            <label for="timeInSeconds">Enter time in Seconds:</label>
+            <input type="text" id="timeInSeconds" name="time" placeholder="for eg. 1"><br><br>
             <button type = "submit" class="btn">Click to Submit</button>
         </form>
         <br>
