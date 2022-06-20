@@ -28,9 +28,9 @@ p {
     justify-content: center;
     align-items: center;
 
-    font-size: 50px;
+    font-size: 265%;
     height: 75px;   
-    width: 200px;
+    width: auto;
 }
 
 p:hover {
@@ -38,7 +38,17 @@ p:hover {
 }
 
 input {
-    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#timeInHours {
+    margin-left: 28px;
+}
+#timeInMinutes {
+    margin-left: 11px;
+}
+#timeInSeconds {
+    margin-left: 8px;
 }
 
 .header {
@@ -77,7 +87,7 @@ input {
 
 .name {
     font-family: 'Sacramento', cursive;
-    font-size: 40px;
+    font-size: 2em;
     position: fixed;
     right: 20px;
     bottom: 10px;
@@ -85,7 +95,7 @@ input {
 
 .name:hover {
     text-decoration: underline;
-    font-size: 41px;
+    font-size: 2.05em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -97,8 +107,8 @@ input {
         margin-top: 10px;
     }
     p {
-        width: 180px;
-        font-size: 40px;
+        width: auto;
+        font-size: 275%;
     }
     .header {
         margin-top: 85px;
@@ -112,5 +122,14 @@ input {
     }
     .name:hover {
         font-size: 31px;
+    }
+    #timeInHours {
+        margin-left: 0;
+    }
+    #timeInMinutes {
+        margin-left: 0;
+    }
+    #timeInSeconds {
+        margin-left: 0;
     }
 }
