@@ -20,6 +20,16 @@ h1 {
 
 p {
     margin: 0;
+    padding: 0;
+
+    margin: 3% 0 3% 0;
+    padding-top: 1%;
+
+    background-color: yellow;
+    color: red;
+    border-top: 1.5px solid gray;
+
+    /* margin: 0;
     background-color: yellow;
     color: red;
     border: 1.5px solid #fff;
@@ -30,25 +40,11 @@ p {
 
     font-size: 265%;
     height: 75px;   
-    width: auto;
-}
-
-p:hover {
-    border: 1.5px solid black;
+    width: auto; */
 }
 
 input {
     margin-top: 5px;
-}
-
-#timeInHours {
-    margin-left: 28px;
-}
-#timeInMinutes {
-    margin-left: 11px;
-}
-#timeInSeconds {
-    margin-left: 8px;
 }
 
 .header {
@@ -73,6 +69,16 @@ input {
     padding: 3%;
 }
 
+#timeInHours {
+    margin-left: 28px;
+}
+#timeInMinutes {
+    margin-left: 11px;
+}
+#timeInSeconds {
+    margin-left: 8px;
+}
+
 .btn {
     font-family: 'Montserrat', sans-serif;
     font-weight: 1000;
@@ -83,6 +89,46 @@ input {
 
 .btn:hover {
     border: 1.5px solid black;
+}
+
+.count-down {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time-content {
+    background-color: yellow;
+    width: 20%;
+    height: 65px;
+    text-align: center;
+
+    border: 1.5px solid #fff;
+}
+
+.time-content:hover {
+    border: 1.5px solid black;
+}
+
+.Hours {
+    font-size: 175%;
+    width: auto;
+    margin: 2px auto;
+    height: 35px;
+}
+
+.Minutes {
+    font-size: 175%;
+    width: auto;
+    margin: 2px auto;
+    height: 35px;
+}
+
+.Seconds {
+    font-size: 175%;
+    width: auto;
+    margin: 2px auto;
+    height: 35px;
 }
 
 .name {
@@ -113,13 +159,6 @@ input {
     .header {
         margin-top: 85px;
     }
-    .name {
-        /* border: 2px solid red; */
-        right: 20px;
-        bottom: 510px;
-        top: 10px;
-        font-size: 30px;
-    }
     .name:hover {
         font-size: 31px;
     }
@@ -131,5 +170,12 @@ input {
     }
     #timeInSeconds {
         margin-left: 0;
+    }
+    .name {
+        /* border: 2px solid red; */
+        right: 20px;
+        bottom: 510px;
+        top: 10px;
+        font-size: 30px;
     }
 }

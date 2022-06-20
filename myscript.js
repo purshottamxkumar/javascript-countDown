@@ -1,20 +1,39 @@
-
-
 let refreshInterval;
 function todo() {
+
     clearInterval(refreshInterval);
 
-    if(document.getElementById("timeInHours").value > 1500) { 
-        if(confirm("Minutes should be less than and equal to 1500. Enter the Minutes Again!")) {
+    // if(document.getElementById("timeInHours").value > 1500) { 
+    //     if(confirm("Minutes should be less than and equal to 1500. Enter the Minutes Again!")) {
+    //         window.location.reload();
+    //     }
+    // }
+    // else {
+        
+    // }
+
+    if(document.getElementById("timeInHours").value < 0 || document.getElementById("timeInHours").value > 24) {
+        if(confirm("Hours must be between 0-24 ")) {
             window.location.reload();
         }
     }
+
+    else if(document.getElementById("timeInMinutes").value < 0 || document.getElementById("timeInMinutes").value > 59) {
+        if(confirm("Minutes must be between 0-59 ")) {
+            window.location.reload();
+        }
+    }
+
+    else if(document.getElementById("timeInSeconds").value < 0 || document.getElementById("timeInSeconds").value > 59) {
+        if(confirm("Seconds must be between 0-59 ")) {
+            window.location.reload();
+        }
+    }
+
     else {
         refreshInterval = setInterval(updateCountDown, 1000); // it refreshes each second!
 
         console.log("This code will run if the Minutes are smaller than and equal to 1500.");
-
-        const ele = document.getElementById("countdown"); // where to show the countDown
 
         let hourRem = document.getElementById("timeInHours").value;
         if(hourRem >= 0 && hourRem < 10) {
@@ -32,7 +51,9 @@ function todo() {
         }
 
         function updateCountDown() {
-            ele.innerHTML = `${hourRem}:${minuteRem}:${secondRem}`;
+            document.getElementsByClassName("Hours")[0].innerHTML = `${hourRem}`;
+            document.getElementsByClassName("Minutes")[0].innerHTML = `${minuteRem}`;
+            document.getElementsByClassName("Seconds")[0].innerHTML = `${secondRem}`;
 
             // for hourRem
             if(parseInt(secondRem) == 0 && parseInt(minuteRem) == 0) {
