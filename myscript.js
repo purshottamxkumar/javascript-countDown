@@ -61,7 +61,8 @@ function todo() {
 
                 if(hourRem == 0) {
                     clearInterval(refreshInterval);
-                    secondfunc();
+                    // secondfunc();
+                    reDirect();
                 }
                 else {
                     hourRem -= 1;
@@ -100,6 +101,16 @@ function todo() {
                 secondRem -= 1;
             }
         }
+    }
+}
+
+function reDirect() {
+    if(confirm("Enjoy the Song")) {
+        // window.location.href = "https://youtu.be/QJO3ROT-A4E";
+        window.open("https://youtu.be/QJO3ROT-A4E");
+    }
+    else {
+        alert("Okay then Stay in the Same Website...");
     }
 }
 
